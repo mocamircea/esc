@@ -3,8 +3,8 @@ pragma solidity 0.4.18;
 contract Events{
     address owner;
     
-    event LogSum(indexed address sender, uint8 val1, uint8 val2);
-    event LogSubtract(indexed address sender, uint8 val1, uint8 val2);
+    event LogSum(address indexed sender, uint8 val1, uint8 val2);
+    event LogSubtract(address indexed sender, uint8 val1, uint8 val2);
     
     function constructor() public {
         owner = msg.sender;
